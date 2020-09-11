@@ -52,4 +52,4 @@ const game = () => {
   }
 }
 
-game()
+// game()

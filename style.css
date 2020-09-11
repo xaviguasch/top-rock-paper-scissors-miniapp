@@ -1,5 +1,27 @@
 body {
   margin: 0;
   padding: 0;
-  background: red;
+  background: #b2ebf2;
+}
+
+img {
+  width: 100px;
+}
+
+.main-game {
+  padding: 2em;
+  margin: 8em auto;
+  max-width: 500px;
+}
+
+.game-options {
+  display: flex;
+  justify-content: center;
+}
+
+.game-options__el {
+  margin: 1em;
+  padding: 1em;
+  background: #fff;
+  border-radius: 2em;
 }
