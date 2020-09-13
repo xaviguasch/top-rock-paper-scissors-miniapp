@@ -34,7 +34,6 @@ const checkWinner = () => {
 }
 
 const playRoundWith = (playersChoice) => {
-  // actionMessage.classList.add('hide')
   const computerPlay = () => {
     return gameOptions[Math.floor(Math.random() * gameOptions.length)]
   }
@@ -45,9 +44,6 @@ const playRoundWith = (playersChoice) => {
   computerRoundPlay.textContent = computerPick
 
   roundDisplay.classList.remove('round-display--hide')
-
-  console.log(playerCount)
-  console.log(computerCount)
 
   if (playerPick === 'rock' && computerPick === 'rock') {
     actionMessage.textContent = "It's a tie!!! Try again"
@@ -108,8 +104,6 @@ const initiateRound = () => {
   generalDisplay.classList.add('general-display--show')
   roundDisplay.classList.add('round-display--hide')
   startBtn.classList.add('hide')
-  scoreDisplay.classList.add('show')
-  roundMessage.classList.add('show')
 
   rockBtn.addEventListener('click', () => {
     playRoundWith('rock')
