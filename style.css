@@ -2,6 +2,8 @@ body {
   margin: 0;
   padding: 0;
   background: #b2ebf2;
+  text-transform: uppercase;
+  font-family: 'Solway', serif;
 }
 
 img {
@@ -24,4 +26,34 @@ img {
   padding: 1em;
   background: #fff;
   border-radius: 2em;
+}
+
+.btn__start {
+  width: 100%;
+  background-color: #fff;
+  border: none;
+  padding: 0.2em;
+  border-radius: 0.5em;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.score-display {
+  display: none;
+}
+
+.round-display {
+  display: none;
+}
+
+.round-message {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: unset;
 }
