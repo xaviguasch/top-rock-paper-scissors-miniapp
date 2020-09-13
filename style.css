@@ -12,8 +12,19 @@ img {
 
 .main-game {
   padding: 2em;
-  margin: 8em auto;
+  margin: 2.5em auto;
   max-width: 500px;
+}
+
+.general-display {
+  display: none;
+  background: #fff;
+  padding: 1em 3em;
+  border-radius: 2em;
+}
+.general-display--show {
+  display: flex;
+  flex-direction: column;
 }
 
 .game-options {
@@ -36,24 +47,56 @@ img {
   border-radius: 0.5em;
   font-size: 2rem;
   text-transform: uppercase;
+  font-family: inherit;
+  font-size: 3rem;
+  margin-top: 1em;
 }
 
-.score-display {
-  display: none;
-}
-
+.score-display,
 .round-display {
-  display: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 0.8rem;
+  height: 4em;
+}
+
+.player-score,
+.player-round-play {
+  color: #00bcd4;
+}
+
+.round-display--hide {
+  opacity: 0;
+}
+
+.computer-score,
+.computer-round-play {
+  color: #dd2c00;
 }
 
 .round-message {
-  display: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 3em;
 }
 
 .hide {
   display: none;
 }
 
-.show {
-  display: unset;
+.winner-message {
+  display: none;
+  color: #00bcd4;
+  background-color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 2em;
+  padding: 1em 2em;
+  border-radius: 2em;
+}
+.winner-message__show {
+  display: block;
 }
